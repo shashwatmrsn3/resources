@@ -1,0 +1,105 @@
+🏛️ 1. General Architecture (8 Topics)
+Monolith vs Microservices: Trade-offs and transition strategies
+
+Layered vs Modular vs Hexagonal architecture
+
+High availability and scalability in web applications
+
+Fault tolerance and designing for failure
+
+Load balancing strategies (L4 vs L7)
+
+Event-driven vs request-response architectures
+
+Reverse proxy and caching layers in modern stacks
+
+Anti-patterns in distributed system architecture
+
+📦 2. Microservices Architecture (9 Topics)
+Microservices decomposition strategies and service boundaries
+
+Distributed transactions and the Saga pattern
+
+Service discovery, registration, and dynamic routing
+
+API Gateway pattern and Backend-for-Frontend (BFF)
+
+Asynchronous communication: queues, events, and message brokers
+
+Shared libraries and business logic across services
+
+Observability in microservices (logging, tracing, metrics)
+
+Inter-service communication protocols (REST, gRPC, async)
+
+Deployment and versioning strategies in microservices
+
+🔗 3. API Design (8 Topics)
+REST vs GraphQL vs gRPC: use cases and trade-offs
+
+API versioning strategies and compatibility guarantees
+
+Designing idempotent and fault-tolerant APIs
+
+Pagination, filtering, and sorting in API design
+
+API error response conventions and patterns
+
+Rate limiting, throttling, and quota management
+
+Streaming APIs: WebSockets, SSE, long polling
+
+Designing public vs internal APIs
+
+🔐 4. Authentication & Security (8 Topics)
+OAuth 2.0 and OpenID Connect: flows and use cases
+
+JWT vs session-based authentication
+
+Role-based access control (RBAC) vs attribute-based access control (ABAC)
+
+Token revocation, expiry, and refresh strategies
+
+Securing APIs from common threats (OWASP Top 10)
+
+Cross-Origin Resource Sharing (CORS) in APIs
+
+Secure handling of secrets, tokens, and credentials
+
+Single Sign-On (SSO) and identity federation
+
+🧪 5. Testing Frameworks & Strategy (8 Topics)
+Testing strategies for microservices architecture
+
+The testing pyramid: unit, integration, E2E tests
+
+Contract testing between microservices
+
+Mocking, stubbing, and simulating downstream dependencies
+
+Load testing, performance testing, and benchmarking
+
+Resilience testing with chaos engineering principles
+
+Testing for API rate limits and error handling
+
+CI/CD test automation and gated deployments
+
+🧠 6. System Design Scenarios (9 Topics)
+Scalable architecture for messaging/chat platforms
+
+Designing a distributed file upload and download service
+
+Rate-limited API infrastructure with quota enforcement
+
+Real-time location tracking system for mobile clients
+
+Notification system with multi-channel delivery
+
+URL shortening system with analytics and redirection
+
+Collaborative document editing architecture
+
+Resilient and scalable authentication system
+
+Internal developer platform (IDP) for microservice deployment
