@@ -1,0 +1,203 @@
+1.
+SQL: Find the average salary of employees hired after the year 2000.
+Theory: Why is WHERE used before aggregation while HAVING is used after?
+
+2.
+SQL: Retrieve employees who have held more than two different titles.
+Theory: What does GROUP BY do and how does it relate to aggregate filtering?
+
+3.
+SQL: Find the employee(s) who currently earn the highest salary.
+Theory: How do ORDER BY, LIMIT, and MAX() differ in purpose and performance?
+
+4.
+SQL: List all departments with the lowest average salary.
+Theory: Why do we need subqueries or JOINs when comparing across groups?
+
+5.
+SQL: List all employees who have never been managers.
+Theory: What’s the difference between NOT IN and NOT EXISTS?
+
+6.
+SQL: Show the top 5 earning employees in each department.
+Theory: What are window functions, and how does RANK() work?
+
+7.
+SQL: Find employees who have changed titles more than 3 times.
+Theory: How does COUNT(DISTINCT ...) work and why use it?
+
+8.
+SQL: List all current employees and how long they’ve been employed.
+Theory: How do you manipulate dates and calculate intervals in SQL?
+
+9.
+SQL: List departments where the average employee tenure exceeds 10 years.
+Theory: How can joins and date arithmetic be combined to derive metrics?
+
+10.
+SQL: Identify employees who received the same salary more than once at different times.
+Theory: What does data redundancy imply in a normalized schema?
+
+11.
+SQL: Find employees who are managers and currently hold the title “Senior Engineer.”
+Theory: What are the benefits and rules around composite primary keys?
+
+12.
+SQL: Find the department(s) with the most employees.
+Theory: What’s the difference between COUNT(*), COUNT(col), and COUNT(DISTINCT col)?
+
+13.
+SQL: List employees who have never received a salary change.
+Theory: How does normalization handle data changes over time?
+
+14.
+SQL: List employees whose current salary is 50% higher than their initial one.
+Theory: How does JOINing with first and last row work in SQL?
+
+15.
+SQL: List pairs of employees hired on the same day.
+Theory: What is a self join and how is it different from normal joins?
+
+16.
+SQL: List departments where all employees are titled “Engineer”.
+Theory: What is the purpose of ALL and HAVING COUNT(CASE...) in filtering?
+
+17.
+SQL: Find employees who held overlapping job titles.
+Theory: What are temporal overlaps and how do you detect them using JOINs?
+
+18.
+SQL: Find the longest salary record duration for each employee.
+Theory: What are GROUP BY + MAX(DATE_DIFF) patterns used for?
+
+19.
+SQL: List employees promoted to manager within 5 years of hire.
+Theory: How do you compare timestamps from different tables using joins?
+
+20.
+SQL: Get employees who have always worked in the same department.
+Theory: What does GROUP BY emp_no HAVING COUNT(DISTINCT dept_no) = 1 mean logically?
+
+21.
+SQL: Find departments that have never had a female employee.
+Theory: What is NOT EXISTS used for and when is it better than LEFT JOIN ... IS NULL?
+
+22.
+SQL: Find employees who had salary jumps over 10,000 between any two periods.
+Theory: What are self-joins on the same table and how do they help in comparisons?
+
+23.
+SQL: List departments with more than 5 employees serving over 15 years.
+Theory: What is a derived table, and how does it differ from a subquery?
+
+24.
+SQL: Rank employees by years of service.
+Theory: How do window functions help when ranking across rows?
+
+25.
+SQL: For each department, show difference between max and min salary.
+Theory: What are aggregation functions, and how do they work together?
+
+26.
+SQL: List all employees who ever worked in Sales.
+Theory: What is the difference between JOIN and a subquery in WHERE?
+
+27.
+SQL: Find employees who were demoted from a higher to lower title.
+Theory: How do you compare sequential rows using LAG() or self-joins?
+
+28.
+SQL: Find the median salary across all employees.
+Theory: Why doesn’t MySQL support MEDIAN() natively, and how do you work around it?
+
+29.
+SQL: Identify employees with missing salary data (gaps in dates).
+Theory: How does temporal coverage work and why do gaps matter?
+
+30.
+SQL: Get employees who worked under more than one manager.
+Theory: What is a many-to-many relationship and how is it tracked?
+
+31.
+SQL: Find employees who worked in multiple departments at the same time.
+Theory: What does an overlapping date range look like and how do you query it?
+
+32.
+SQL: List department managers in departments with over 100 employees.
+Theory: What’s the use of subqueries in FROM clause?
+
+33.
+SQL: Find the average time between title changes for employees.
+Theory: How do DATEDIFF() and LAG() support temporal analysis?
+
+34.
+SQL: List employees who got a salary raise on the same day their title changed.
+Theory: How do you use multi-table joins on date-based equality?
+
+35.
+SQL: List employees who worked continuously for 15+ years.
+Theory: What are date gaps and how can you detect uninterrupted sequences?
+
+36.
+SQL: Show departments that had multiple managers at the same time.
+Theory: How do you detect overlapping intervals between rows?
+
+37.
+SQL: Find employees who had identical salary progression as another employee.
+Theory: How do you compare entire row sequences?
+
+38.
+SQL: List employees who held the same title for 10+ years.
+Theory: How do you calculate duration within a single row (from_date to to_date)?
+
+39.
+SQL: Get employees whose salary is below their department average.
+Theory: What is a correlated subquery and why use it?
+
+40.
+SQL: Identify employees who were rehired (left and returned).
+Theory: What are ways to detect non-continuous employment from temporal data?
+
+41.
+SQL: Count the number of titles held by managers.
+Theory: What’s the difference between using JOIN vs filtering before aggregation?
+
+42.
+SQL: Find employees who were promoted faster than the average.
+Theory: How do you calculate row-wise and group-level statistics together?
+
+43.
+SQL: List departments with consistently increasing salaries year-over-year.
+Theory: How do LAG(), LEAD(), and PARTITION BY support trend analysis?
+
+44.
+SQL: Identify employees with the largest salary drop over time.
+Theory: What’s the importance of ordering data correctly for analytical queries?
+
+45.
+SQL: Show employees currently holding a title they never held before.
+Theory: What are anti-joins and how are they written in MySQL?
+
+46.
+SQL: Find departments where average salary decreased over time.
+Theory: What’s a rolling aggregation and how can MySQL simulate it?
+
+47.
+SQL: Identify salary records that look anomalous (huge spike/drop).
+Theory: What is data quality assurance in SQL and how do you build it in?
+
+48.
+SQL: List the top 10 most loyal employees (longest uninterrupted service).
+Theory: What are best practices for sorting and limiting query results?
+
+49.
+SQL: List employees who had exactly 3 titles and 3 salary changes.
+Theory: Why and how does HAVING COUNT(DISTINCT...) matter for filtering?
+
+50.
+SQL: Find average salary difference between male and female employees per title.
+Theory: How do multi-level GROUP BY and ROLLUP help summarize data?
+
+
+
+
