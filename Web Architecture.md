@@ -1,274 +1,212 @@
 
+---
 
-## 1. API Design & Architecture
+## ⚙️ 1. Microservices (In Depth)
 
-### RESTful APIs
-- Resource modeling
-- HTTP methods & status codes
-- Versioning (URI, headers, query params)
-- Pagination (offset vs cursor)
-- HATEOAS
+### 1.1 Monolith vs Microservices  
+<!-- -->
 
-### GraphQL
-- Schema definition
-- Resolvers
-- N+1 query problem
-- Query complexity limits
+### 1.2 Service Communication (Sync vs Async)  
+<!-- -->
 
-### gRPC
-- Protocol Buffers
-- Unary vs streaming RPCs
-- Strong typing and contract enforcement
-- Authentication via metadata
+### 1.3 REST vs gRPC in Microservices  
+<!-- -->
 
-### API Documentation
-- OpenAPI / Swagger
-- Postman Collections
-- API-first development
+### 1.4 API Gateway & BFF Pattern  
+<!-- -->
 
-### API Gateway
-- Request routing
-- Rate limiting & throttling
-- Authentication and Authorization
-- Caching and compression
-- Tools: Kong, Apigee, AWS API Gateway
+### 1.5 Service Discovery  
+<!-- -->
+
+### 1.6 Load Balancing Strategies  
+<!-- -->
+
+### 1.7 Circuit Breaker & Retry Patterns  
+<!-- -->
+
+### 1.8 Distributed Tracing  
+<!-- -->
+
+### 1.9 Database per Service Pattern  
+<!-- -->
+
+### 1.10 Event-Driven Architecture & Messaging (Kafka, RabbitMQ)  
+<!-- -->
+
+### 1.11 Saga Pattern & Distributed Transactions  
+<!-- -->
+
+### 1.12 Versioning & Deployment Strategies  
+<!-- -->
 
 ---
 
-## 2. Authentication
+## 🛡️ 2. Security (Web, APIs, and Services)
 
-### OAuth 2.0
-- Roles: Resource owner, client, auth server, resource server
-- Grant types: Authorization code, Client credentials, Implicit, PKCE
+### 2.1 Authentication vs Authorization  
+<!-- -->
 
-### OpenID Connect (OIDC)
-- Identity layer on top of OAuth 2.0
-- ID token vs access token
+### 2.2 OAuth2, OIDC, JWT  
+<!-- -->
 
-### JWT (JSON Web Tokens)
-- Structure: Header, Payload, Signature
-- Expiry, audience, issuer validation
-- Risks: token leakage, replay
+### 2.3 Session-based Auth vs Token-based Auth  
+<!-- -->
 
-### Session-based Auth
-- Cookies & session stores
-- CSRF protection
+### 2.4 SSO (Single Sign-On)  
+<!-- -->
 
-### Single Sign-On (SSO)
-- SAML, OIDC
-- Enterprise integrations (Okta, Azure AD)
+### 2.5 Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC)  
+<!-- -->
 
-### Multi-Factor Authentication (MFA)
-- TOTP, SMS, Email codes
-- WebAuthn / FIDO2
+### 2.6 OWASP Top 10  
+<!-- -->
 
----
+#### 2.6.1 Injection  
+#### 2.6.2 Broken Authentication  
+#### 2.6.3 Sensitive Data Exposure  
+#### 2.6.4 XXE / SSRF  
+#### 2.6.5 Security Misconfiguration  
+<!-- -->
 
-## 3. Microservices
+### 2.7 API Security (Rate Limiting, CORS, HTTPS, API Keys)  
+<!-- -->
 
-### Architecture
-- Bounded Contexts
-- Domain-Driven Design (DDD)
-- Shared nothing architecture
-
-### API Gateway
-- Centralized ingress point
-- Protocol translation (REST ⇄ gRPC)
-- Authentication, metrics, and routing
-
-### Service Discovery
-- Client-side vs server-side discovery
-- Tools: Consul, Eureka, Kubernetes DNS
-
-### Inter-service Communication
-- Synchronous: REST, gRPC
-- Asynchronous: Kafka, RabbitMQ
-- Event-driven design
-
-### Data Ownership
-- Database per service
-- Eventual consistency
-- Saga pattern (orchestration vs choreography)
-- Outbox pattern, Change Data Capture
-
-### Fault Tolerance
-- Circuit breakers (Resilience4j, Hystrix)
-- Retries, timeouts, bulkheads
-- Load shedding
-
-### Observability
-- Centralized logging (ELK, Loki)
-- Tracing (OpenTelemetry, Jaeger)
-- Metrics (Prometheus, Grafana)
+### 2.8 Securing Microservices (Zero Trust, Mutual TLS, API Gateway Auth)  
+<!-- -->
 
 ---
 
-## 4. Caching
+## 📡 3. API Design & Protocols
 
-### Caching Layers
-- Client-side (e.g., HTTP caching, browser)
-- CDN (e.g., Cloudflare, Akamai)
-- Server-side (application, database)
+### 3.1 REST – Principles and Best Practices  
+<!-- -->
 
-### Cache Strategies
-- Write-through
-- Write-behind
-- Cache-aside
-- Read-through
+### 3.2 GraphQL – Benefits and Tradeoffs  
+<!-- -->
 
-### Eviction Policies
-- LRU, LFU, FIFO
-- TTL / Expiry
+### 3.3 gRPC – Usage and When to Choose  
+<!-- -->
 
-### Tools & Systems
-- In-memory: Redis, Memcached
-- HTTP caching headers: ETag, Cache-Control
-- Distributed caching considerations (consistency, invalidation)
+### 3.4 OpenAPI / Swagger / API Documentation  
+<!-- -->
 
----
+### 3.5 Pagination, Filtering, Sorting  
+<!-- -->
 
-## 5. Security
+### 3.6 Rate Limiting and Quotas  
+<!-- -->
 
-### Web Security (OWASP Top 10)
-- SQL Injection, XSS, CSRF
-- Insecure deserialization
-- Security misconfigurations
+### 3.7 Error Handling and Status Codes  
+<!-- -->
 
-### API Security
-- Input validation
-- Rate limiting
-- Authentication & Authorization
-- API keys vs OAuth tokens
+### 3.8 Versioning APIs (URI, Header, Accept Version)  
+<!-- -->
 
-### Token Management
-- Secure storage
-- Token expiry & refresh mechanisms
-- Blacklisting and revocation
+### 3.9 Idempotency in APIs  
+<!-- -->
 
-### Encryption
-- TLS for data in transit
-- AES for data at rest
-- Hashing passwords (bcrypt, Argon2)
-
-### Secrets Management
-- Vault, AWS Secrets Manager
-- Avoiding secrets in code
-- Rotation policies
+### 3.10 Designing APIs for Microservices  
+<!-- -->
 
 ---
 
-## 6. Testing
+## 🚀 4. DevOps for Developers
 
-### Types of Tests
-- Unit testing (fast, isolated)
-- Integration testing (e.g., DB, services)
-- End-to-end testing
-- Smoke and sanity tests
+### 4.1 Docker – Images, Volumes, Networking  
+<!-- -->
 
-### Microservice Testing
-- Consumer-driven contract tests (Pact)
-- API testing (Postman, REST Assured)
-- Test containers for ephemeral dependencies
+### 4.2 Kubernetes – Basics, Pods, Services, Deployments  
+<!-- -->
 
-### Test Automation
-- CI-integrated test suites
-- Test coverage tools (Jacoco, Istanbul)
-- Mocking frameworks (Mockito, WireMock)
+### 4.3 CI/CD Pipelines – GitHub Actions, GitLab, Jenkins  
+<!-- -->
 
-### Load & Performance Testing
-- JMeter, k6, Gatling
-- Performance baselines & SLAs
-- Chaos engineering (Gremlin, Litmus)
+### 4.4 Environment Management (Dev, Staging, Prod)  
+<!-- -->
 
----
+### 4.5 Infrastructure as Code (Terraform, Pulumi, AWS CDK)  
+<!-- -->
 
-## 7. CI/CD (Continuous Integration / Delivery / Deployment)
+### 4.6 Secrets Management (Vault, AWS Secrets Manager)  
+<!-- -->
 
-### CI Concepts
-- Automated builds and test runs
-- Linting and static code analysis
-- Artifact creation (e.g., Docker image, binary)
+### 4.7 Logging and Monitoring (ELK, Prometheus, Grafana)  
+<!-- -->
 
-### CD Concepts
-- Deployment pipelines
-- Manual approvals, gates
-- Progressive delivery: canary, blue-green, rolling
+### 4.8 Deployment Strategies (Blue-Green, Canary, Rolling)  
+<!-- -->
 
-### Tools
-- GitHub Actions, GitLab CI, Jenkins
-- ArgoCD (GitOps)
-- Spinnaker, CircleCI
+### 4.9 Feature Flags and Config Management  
+<!-- -->
 
-### Deployment Strategies
-- Rolling updates
-- Blue-Green
-- Canary deployments
-- Feature flags
+### 4.10 Scaling Services (Horizontal, Auto-Scaling, Load Testing)  
+<!-- -->
 
 ---
 
-## 8. Scaling Databases
+## 🧠 5. System Design Concepts
 
-### Vertical vs Horizontal Scaling
-- Read replicas
-- Master-slave, master-master
-- Sharding
+### 5.1 Scalability (Vertical vs Horizontal)  
+<!-- -->
 
-### Partitioning
-- Range vs Hash partitioning
-- Rebalancing strategies
-- Handling hot partitions
+### 5.2 Availability and Redundancy  
+<!-- -->
 
-### Caching Layers
-- Query caching
-- Materialized views
-- Redis as side cache
+### 5.3 Load Balancers and Reverse Proxies  
+<!-- -->
 
-### Consistency & Availability
-- Eventual vs strong consistency
-- CAP Theorem
-- Write concerns and read preferences (MongoDB, Cassandra)
+### 5.4 CAP Theorem  
+<!-- -->
 
-### Tools and Techniques
-- PostgreSQL: logical replication, partitioning
-- MySQL: read replicas, Galera Cluster
-- NoSQL: Cassandra, DynamoDB scaling patterns
+### 5.5 Caching Strategies (CDN, In-Memory, DB Cache)  
+<!-- -->
+
+### 5.6 Consistency Models (Eventual, Strong, Causal)  
+<!-- -->
+
+### 5.7 Message Queues and Asynchronous Processing  
+<!-- -->
+
+### 5.8 Rate Limiting and Throttling  
+<!-- -->
+
+### 5.9 Data Partitioning and Sharding  
+<!-- -->
+
+### 5.10 CDN and Edge Computing  
+<!-- -->
 
 ---
 
-## 9. Software Architecture Styles
+## 🧪 6. System Design Scenarios
 
-### Monolith
-- Single deployable unit
-- Tight coupling of modules
-- Easier to develop and test early on
-- Hard to scale or modify over time
+### 6.1 Design a Scalable File Storage System (e.g., Google Drive)  
+<!-- -->
 
-### Microservices
-- Services are independent and loosely coupled
-- Technology agnostic
-- Requires CI/CD, service discovery, observability
-- Higher operational complexity
+### 6.2 Design a Real-Time Chat Application  
+<!-- -->
 
-### Serverless
-- Function-as-a-Service (e.g., AWS Lambda)
-- Event-driven
-- No infrastructure management
-- Cold start latency, observability limits
+### 6.3 Design an API Rate Limiting System  
+<!-- -->
 
-### Event-Driven Architecture
-- Publish-subscribe pattern
-- Asynchronous processing
-- Scalability & decoupling
-- Challenges in consistency & ordering
+### 6.4 Design a Video Streaming Platform  
+<!-- -->
 
-### Modular Monolith
-- Clear module boundaries
-- Internal service abstraction without network calls
-- Easier transition path to microservices
+### 6.5 Design an Authentication System  
+<!-- -->
 
-### Service Mesh
-- Infrastructure layer for service communication
-- Features: observability, retries, circuit breaking, mTLS
-- Tools: Istio, Linkerd
+### 6.6 Design a Notification System (Email + SMS)  
+<!-- -->
+
+### 6.7 Design a Ride Sharing Backend (Uber-like)  
+<!-- -->
+
+### 6.8 Design a Feature Flag Service  
+<!-- -->
+
+---
+
+## 📅 Notes & Tracker
+
+Use this section to track your progress or daily learning goals.
 
