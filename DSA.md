@@ -1,118 +1,94 @@
-# 🔁 DSA Problem-Based Study Notebook (Arrays, Recursion, Linked List, Trees)
+# DSA Problem-Based Notebook (Core Topics)
 
-
----
-
-## ✅ Key
-
-- ☐ Not Started
-- 🚧 In Progress
-- ☑ Solved
+Self-study list focused on must-know DSA concepts.
 
 ---
 
-## 📦 1. Array Problems
+## 📦 Array Manipulation
 
-### 🔹 1.1 Basics & Traversals
-
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Two Sum | [LeetCode #1](https://leetcode.com/problems/two-sum) | HashMap |
-| ☐ | Remove Duplicates from Sorted Array | [#26](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Two pointers |
-| ☐ | Move Zeroes | [#283](https://leetcode.com/problems/move-zeroes) | In-place |
-
----
-
-### 🔹 1.2 Two Pointers & Sliding Window
-
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Best Time to Buy and Sell Stock | [#121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Two pointers |
-| ☐ | Longest Substring Without Repeating Characters | [#3](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Sliding window |
-| ☐ | Minimum Size Subarray Sum | [#209](https://leetcode.com/problems/minimum-size-subarray-sum) | Sliding window |
+- [ ] [Two Sum](https://leetcode.com/problems/two-sum) – Hash Map
+- [ ] [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
+- [ ] [Move Zeroes](https://leetcode.com/problems/move-zeroes)
+- [ ] [Sort Colors](https://leetcode.com/problems/sort-colors) – Dutch National Flag
+- [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
+- [ ] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) – Kadane’s Algorithm
+- [ ] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)
+- [ ] [Majority Element](https://leetcode.com/problems/majority-element)
+- [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water)
+- [ ] [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)
 
 ---
 
-### 🔹 1.3 Prefix Sum & Rearrangement
+## 🧩 2D Array (Matrix) Manipulation
 
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Subarray Sum Equals K | [#560](https://leetcode.com/problems/subarray-sum-equals-k) | Prefix sum + HashMap |
-| ☐ | Product of Array Except Self | [#238](https://leetcode.com/problems/product-of-array-except-self) | Prefix + Suffix |
-| ☐ | Merge Intervals | [#56](https://leetcode.com/problems/merge-intervals) | Sorting |
-
----
-
-## 🧮 2. 2D Array (Matrix) Problems
-
-### 🔹 2.1 Traversal, Flip, Rotate
-
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Set Matrix Zeroes | [#73](https://leetcode.com/problems/set-matrix-zeroes) | O(1) space version |
-| ☐ | Rotate Image | [#48](https://leetcode.com/problems/rotate-image) | In-place rotation |
-| ☐ | Spiral Matrix | [#54](https://leetcode.com/problems/spiral-matrix) | Direction simulation |
+- [ ] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)
+- [ ] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix)
+- [ ] [Rotate Image](https://leetcode.com/problems/rotate-image)
+- [ ] [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)
+- [ ] [Number of Islands](https://leetcode.com/problems/number-of-islands)
+- [ ] [Flood Fill](https://leetcode.com/problems/flood-fill)
+- [ ] [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)
+- [ ] [01 Matrix](https://leetcode.com/problems/01-matrix)
+- [ ] [Max Area of Island](https://leetcode.com/problems/max-area-of-island)
+- [ ] [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse)
 
 ---
 
-### 🔹 2.2 Grid BFS/DFS
+## ✂️ String Manipulation
 
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Number of Islands | [#200](https://leetcode.com/problems/number-of-islands) | DFS/BFS |
-| ☐ | Rotting Oranges | [#994](https://leetcode.com/problems/rotting-oranges) | Multi-source BFS |
-| ☐ | 01 Matrix | [#542](https://leetcode.com/problems/01-matrix) | BFS |
-
----
-
-## 🧠 3. Recursion & Backtracking
-
-### 🔹 3.1 Subsets / Permutations
-
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Subsets | [#78](https://leetcode.com/problems/subsets) | Backtracking |
-| ☐ | Permutations | [#46](https://leetcode.com/problems/permutations) | Backtracking |
-| ☐ | Combination Sum | [#39](https://leetcode.com/problems/combination-sum) | Recursion + Backtrack |
+- [ ] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)
+- [ ] [Valid Anagram](https://leetcode.com/problems/valid-anagram)
+- [ ] [Group Anagrams](https://leetcode.com/problems/group-anagrams)
+- [ ] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)
+- [ ] [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)
+- [ ] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)
+- [ ] [Implement strStr()](https://leetcode.com/problems/implement-strstr)
+- [ ] [Count and Say](https://leetcode.com/problems/count-and-say)
+- [ ] [Multiply Strings](https://leetcode.com/problems/multiply-strings)
 
 ---
 
-### 🔹 3.2 Classic Backtracking
+## 🔗 Linked List
 
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Word Search | [#79](https://leetcode.com/problems/word-search) | DFS with visited matrix |
-| ☐ | N-Queens | [#51](https://leetcode.com/problems/n-queens) | Classic |
-| ☐ | Sudoku Solver | [#37](https://leetcode.com/problems/sudoku-solver) | Constraint backtracking |
-
----
-
-### 🔹 3.3 Recursion Basics
-
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Climbing Stairs | [#70](https://leetcode.com/problems/climbing-stairs) | DP / Recursion |
-| ☐ | Pascal’s Triangle | [#118](https://leetcode.com/problems/pascals-triangle) | Recursive array building |
-| ☐ | Generate Parentheses | [#22](https://leetcode.com/problems/generate-parentheses) | DFS |
+- [ ] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
+- [ ] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
+- [ ] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
+- [ ] [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
+- [ ] [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)
+- [ ] [Add Two Numbers](https://leetcode.com/problems/add-two-numbers)
+- [ ] [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)
+- [ ] [Reorder List](https://leetcode.com/problems/reorder-list)
+- [ ] [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)
+- [ ] [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)
 
 ---
 
-## 🔗 4. Linked List Problems
+## 🔁 Recursion & Backtracking
 
-### 🔹 4.1 Basics
-
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Reverse Linked List | [#206](https://leetcode.com/problems/reverse-linked-list) | Iterative & Recursive |
-| ☐ | Merge Two Sorted Lists | [#21](https://leetcode.com/problems/merge-two-sorted-lists) | Dummy node pattern |
-| ☐ | Remove Nth Node From End | [#19](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Two pointers |
+- [ ] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
+- [ ] [Fibonacci Number](https://leetcode.com/problems/fibonacci-number)
+- [ ] [Permutations](https://leetcode.com/problems/permutations)
+- [ ] [Subsets](https://leetcode.com/problems/subsets)
+- [ ] [Combination Sum](https://leetcode.com/problems/combination-sum)
+- [ ] [Generate Parentheses](https://leetcode.com/problems/generate-parentheses)
+- [ ] [Word Search](https://leetcode.com/problems/word-search)
+- [ ] [N-Queens](https://leetcode.com/problems/n-queens)
+- [ ] [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)
+- [ ] [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)
 
 ---
 
-### 🔹 4.2 Cycle & Intersection
+## 🌲 Trees
 
-| Status | Problem | Link | Notes |
-|--------|---------|------|-------|
-| ☐ | Linked List Cycle | [#141](https://leetcode.com/problems/linked-list-cycle) | Fast/Slow pointers |
-| ☐ | Intersection of Two Linked Lists | [#160](https://leetcode.com/problems/intersection-of-two-linked-lists) | Two pointer sync |
-| ☐ | Add Two Numbers | [#
+- [ ] [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
+- [ ] [Same Tree](https://leetcode.com/problems/same-tree)
+- [ ] [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
+- [ ] [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
+- [ ] [Path Sum](https://leetcode.com/problems/path-sum)
+- [ ] [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
+- [ ] [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+- [ ] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)
+- [ ] [Construct Binary Tree from Preorder and Inorder](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)
+- [ ] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
+
+---
