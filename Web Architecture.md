@@ -1,5 +1,5 @@
-1. Microservices  
-    1.1 Principles & Architecture using Spring Boot  
+# Microservices  
+    ## Principles & Architecture using Spring Boot  
     1.2 API Gateway using Spring Cloud Gateway  
     1.3 Service Discovery using Eureka/Consul  
     1.4 Inter-Service Communication using REST/Messaging/Event-driven  
