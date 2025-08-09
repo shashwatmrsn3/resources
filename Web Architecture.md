@@ -55,4 +55,17 @@
     8.2 Exception Handling using @ControllerAdvice/Error payloads  
     8.3 Migration Strategies using monolith-to-microservice approaches  
     8.4 Collaboration Best Practices using branching models/code reviews  
-    8.5 Documentation Standards using OpenAPI/README/style guides  
+    8.5 Documentation Standards using OpenAPI/README/style guides
+
+9. Other Advanced Spring Boot Topics  
+    10.1 Asynchronous Processing using @Async  
+    10.2 Scheduled Jobs using @Scheduled  
+    10.3 Batch Processing using Spring Batch  
+    10.4 Retry Mechanisms using Spring Retry  
+    10.5 Task Scheduling using Quartz Scheduler  
+    10.6 Parallel Streams & Executor Services using Java Concurrency  
+    10.7 Event-Driven Architecture using ApplicationEvents or messaging platforms (Kafka/RabbitMQ)  
+    10.8 Transaction Management in async/batch contexts using Spring Transaction Manager  
+    10.9 Handling Large Data Sets using chunk-oriented processing (Spring Batch)  
+    10.10 Job Monitoring & Auditing using Spring Batch Admin or custom dashboards  
+
